@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+h1 {
+    color: #333;
+}
+#symbol-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    max-width: 600px;
+}
+.symbol-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.symbol-description {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.symbol-btn {
+    padding: 15px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.symbol-btn:hover {
+    background-color: #e0e0e0;
+}
+#message {
+    position: fixed;
+    top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+textarea {
+    width: 80%;
+    max-width: 500px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
