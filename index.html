@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Símbolos Matemáticos</title>
+    <title>Aplicação de Utilidades DuDS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +11,23 @@
         <h1>Aplicação de Utilidades DuDS</h1>
     </header>
     <main>
-        <div id="symbol-container"></div>
-        <textarea placeholder="Cole aqui para testar..."></textarea>
+        <!-- Seção de Símbolos Matemáticos -->
+        <section id="symbols-section">
+            <div id="symbol-container"></div>
+            <textarea placeholder="Cole aqui para testar..."></textarea>
+        </section>
+
+        <!-- Seção de Determinante -->
+        <section id="determinant-section" style="display: none;">
+            <h2>Calcular Determinante</h2>
+            <div id="dimension-input">
+                <button id="set-dimension-btn">Definir Dimensão</button>
+            </div>
+            <div id="matrix-inputs" style="display: none;"></div>
+            <button id="calculate-btn" style="display: none;">Calcular</button>
+            <p id="result" style="display: none;">Resultado: <span id="determinant-value"></span></p>
+        </section>
+
         <div id="message">Símbolo copiado!</div>
     </main>
     <script type="module" src="main.js"></script>
