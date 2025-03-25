@@ -5,10 +5,49 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #f0f0f0;
+    margin: 0;
 }
-h1 {
-    color: #333;
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #4CAF50;
+}
+
 #symbol-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,17 +55,20 @@ h1 {
     margin: 20px 0;
     max-width: 600px;
 }
+
 .symbol-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .symbol-description {
     font-size: 12px;
     color: #555;
     margin-bottom: 5px;
     text-align: center;
 }
+
 .symbol-btn {
     padding: 15px;
     width: 50px;
@@ -39,9 +81,11 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 .symbol-btn:hover {
     background-color: #e0e0e0;
 }
+
 #message {
     position: fixed;
     top: 10px;
@@ -51,6 +95,7 @@ h1 {
     border-radius: 5px;
     display: none;
 }
+
 textarea {
     width: 80%;
     max-width: 500px;
